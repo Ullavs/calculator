@@ -1,0 +1,140 @@
+:root {
+  --background-color-body: #f5a66b;
+  --font-family: "Montserrat", sans-serif;
+
+  --background-color-calculator: #ebebeb;
+  --text-color-input: #263441;
+  --text-color-numbers: #a5a5a5;
+  --text-color-operators: #89929a;
+  --equals-button-background: #ed802e;
+  --equals-text-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-calculator: #243441;
+    --text-color-input: #fff;
+    --text-color-numbers: #57606a;
+    --text-color-operators: #ed802e;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+body {
+  background-color: var(--background-color-body);
+  font-family: var(--font-family);
+  display: grid;
+  place-content: center;
+}
+
+#calculator {
+  background-color: var(--background-color-calculator);
+  border-radius: 3rem;
+  overflow: hidden;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-block: 6rem 3rem;
+  padding-inline: 2rem;
+}
+
+#screen {
+  font-size: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-gap: 0.5rem;
+}
+
+#result,
+#operator {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-input);
+  text-align: right;
+}
+
+input::placeholder {
+  color: var(--text-color-input);
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: 70% 25%;
+  grid-gap: 1.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-block-start: 2rem;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: var(--text-color-numbers);
+  place-items: center;
+  grid-gap: 1rem;
+}
+
+#operators {
+  color: var(--text-color-operators);
+  display: grid;
+  place-items: center;
+  grid-gap: 0.5rem;
+}
+
+#numbers div {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#operators div {
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  width: 4.5rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#equals {
+  background-color: var(--equals-button-background);
+  color: var(--equals-text-color);
+}
+
+#numbers div:active,
+#operators div:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
