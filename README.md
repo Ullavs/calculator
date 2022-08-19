@@ -14,7 +14,7 @@ This is a calculator with all the expected functionality, inspired by an assignm
 
 ### Future improvements
 
-- [⌛] Design refactor
+- [ ] ⌛ Design refactor
 - [ ] Mobile friendly
 
 ## Live URL
