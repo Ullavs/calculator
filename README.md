@@ -7,10 +7,14 @@ This is a calculator with all the expected functionality, inspired by an assignm
 ## Built with:
 
 - JavaScript
+- CSS 3
+- HTML 5
+- CSS Grid
+- CSS Custom style components
 
 ### Future improvements
 
-- [ ] Design refactor
+- [⌛] Design refactor
 - [ ] Mobile friendly
 
 ## Live URL
