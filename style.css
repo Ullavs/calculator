@@ -161,7 +161,7 @@ input::placeholder {
 #operators div {
   padding: 1rem;
   border-radius: 0.5rem;
-  width: 4rem;
+  width: 3.5rem;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -182,10 +182,8 @@ input::placeholder {
   color: var(--equals-text-color);
 }
 
-@media (min-width: 48rem) {
-  #numbers div:active,
-  #operators div:active {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  }
+#numbers div:active,
+#operators div:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
