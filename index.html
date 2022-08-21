@@ -17,35 +17,37 @@
   </head>
 
   <body>
-    <div id="calculator">
-      <div id="screen">
-        <input type="text" id="result" placeholder="0" value="" disabled />
-        <input type="text" id="operator" disabled />
-      </div>
-      <div id="keys">
-        <div id="numbers">
-          <div onclick="onClickNumber('7')">7</div>
-          <div onclick="onClickNumber('8')">8</div>
-          <div onclick="onClickNumber('9')">9</div>
-          <div onclick="onClickNumber('4')">4</div>
-          <div onclick="onClickNumber('5')">5</div>
-          <div onclick="onClickNumber('6')">6</div>
-          <div onclick="onClickNumber('1')">1</div>
-          <div onclick="onClickNumber('2')">2</div>
-          <div onclick="onClickNumber('3')">3</div>
-          <div onclick="onClickNumber('.')">.</div>
-          <div onclick="onClickNumber('0')">0</div>
-          <div id="equals" onclick="onClickEquals('=')">=</div>
+    <main>
+      <div id="calculator">
+        <div id="screen">
+          <input type="text" id="result" placeholder="0" value="" disabled />
+          <input type="text" id="operator" disabled />
         </div>
-        <div id="operators">
-          <div onclick="onClickCancel('C')">C</div>
-          <div onclick="onClickOperator('+')">+</div>
-          <div onclick="onClickOperator('-')">-</div>
-          <div onclick="onClickOperator('x')">x</div>
-          <div onclick="onClickOperator('/')">/</div>
+        <div id="keys">
+          <div id="numbers">
+            <div onclick="onClickNumber('7')">7</div>
+            <div onclick="onClickNumber('8')">8</div>
+            <div onclick="onClickNumber('9')">9</div>
+            <div onclick="onClickNumber('4')">4</div>
+            <div onclick="onClickNumber('5')">5</div>
+            <div onclick="onClickNumber('6')">6</div>
+            <div onclick="onClickNumber('1')">1</div>
+            <div onclick="onClickNumber('2')">2</div>
+            <div onclick="onClickNumber('3')">3</div>
+            <div onclick="onClickNumber('.')">.</div>
+            <div onclick="onClickNumber('0')">0</div>
+            <div id="equals" onclick="onClickEquals('=')">=</div>
+          </div>
+          <div id="operators">
+            <div onclick="onClickCancel('C')">C</div>
+            <div onclick="onClickOperator('+')">+</div>
+            <div onclick="onClickOperator('-')">-</div>
+            <div onclick="onClickOperator('x')">x</div>
+            <div onclick="onClickOperator('/')">/</div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
